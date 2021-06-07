@@ -1,0 +1,381 @@
+/*========================fonts===========================*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root{
+    /*======color=======*/
+    --very-dark-blue: #060339;
+    --desaturated-blue: #575988;
+    
+    --bright-blue: #3065F7;
+    --moderate-cyan: #3C9E8E;
+
+    --light-grayish-blue: #F6F6FD;
+    --light-gray: #BFBFBF;
+}
+html {
+    font-size : 100%;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+body{
+    margin : 0;
+    padding : 0;
+    font-family:'Open Sans', sans-serif; ;
+}
+h1{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+    font-size: 2rem;
+}
+/*========================Navigation Bar======================*/
+nav{
+    display : flex;
+    justify-content : space-between;
+    align-items: center;
+    padding : 3rem 4rem;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size : 1rem;
+    color :var(--very-dark-blue);
+}
+img.logo{ 
+    width : 130px;
+}
+.nav-links{
+    display : flex;
+    align-items: center;
+    white-space: nowrap; 
+    margin-left :2rem;
+}
+a.nav-links, a.nav-links:visited, a.nav-links:hover {
+    text-decoration : none;
+    color : var(--very-dark-blue);
+}
+/*=======responsive nav======*/
+
+@media (max-width: 500px) { 
+    nav{
+        padding: 2rem 2rem;
+        font-size: 00.8rem;
+    }
+    img.logo{
+       width: 90px;
+   }
+   .nav-links{
+        margin-left :1rem;
+    }
+    div.nav-links{
+        margin-left :0rem;
+    }
+}
+
+/*======================= Section 1 ==============================*/
+.section1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding :4rem;
+    /*border-style: solid;*/
+}
+div.content-section1{
+    max-width : 600px;
+    min-width: 250px;
+}
+h1.content-section1,p.content-section1{
+    width: 100%;
+}
+div.image-section{
+    max-width : 500px;
+    min-width: 250px;
+}
+img.image-section{
+    width: 100%;
+}
+form.content-section1{
+    display : flex;
+    align-items: center;
+}
+#email-section1{
+    width: 280px;
+    height: 1rem;
+    padding :1.25rem;
+    margin-right : 1rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+.button-section1{
+    position: relative;
+    border : none;
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    padding : 0.75rem 50px;
+    margin-top: 1rem;
+   
+    background : var(--bright-blue);
+    color : white;
+}
+.button-section1:hover{
+    opacity: 0.8;
+}
+/*======== Responsive Section 1========*/
+@media (max-width: 900px) { 
+    .section1{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    /*======form======*/
+    form.content-section1{
+        flex-direction: column;
+    }
+    #email-section1{
+        padding :1.25rem;
+        width : 100%;
+        margin: 0;
+    }
+    .button-section1{
+        width:100%;
+        
+    }
+    
+}
+
+
+/*============================= Section 2 =========================*/
+/*==========curve==========*/
+
+div.curve{
+    width: 100%;
+}
+img.curve{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.section2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding :4rem;
+    
+
+    background-color: var(--light-grayish-blue) ;
+    /*border-style: solid;*/   
+}
+div.content-section2{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+    max-width : 600px;
+    min-width: 300px;
+}
+.p-content-section2{
+    width: 85%;
+}
+p.p-content-section2{
+    width: 100%;
+}
+
+/*=====how filo works ====*/
+div.how-fylo-works{
+    display : flex;
+    align-items: center;
+}
+a.how-fylo-works{
+    margin-left: 0;
+    color : var(--moderate-cyan);
+    text-decoration: underline;
+}
+a.how-fylo-works:hover{
+    filter: saturate(3);
+}
+
+/*====== comment ========*/
+div.comment-section2{
+    display : flex;
+    flex-direction: column;
+    max-width: 350px;
+    min-width: 100px;
+    
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    padding : 1.5rem;
+    margin-top: 2rem;
+
+    background: white;
+    font-size: 0.75rem;
+}
+p.comment-section2{
+    text-align: left;
+}
+.profile-comment-section2{
+    display: flex;
+    align-items:center ;
+}
+img.profile-comment-section2{
+    border-radius: 50%;
+}
+p.profile-comment-section2{
+    margin-left: 10px;
+}
+/*===============Responsive Section2===========*/
+@media (max-width: 900px) { 
+    div.content-section2{
+        justify-content: center;
+        align-items: center;
+    }
+    .section2{
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+}
+
+/*============================= Section 3 =========================*/
+.section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding :4rem;
+  
+   
+    background-color: var(--desaturated-blue);
+}
+.content-section3{
+    color : white;
+    min-width: 300px;
+}
+p.content-section3{
+    margin-right: 100px;
+    max-width: 500px;
+}
+#email-section3{
+    width: 280px;
+    
+    padding :0.75rem ;
+    margin-right : 1rem;
+}
+.button-section3{
+    position: relative;
+    border : none;
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    padding : 0.75rem 50px;
+    margin-top: 1rem;
+   
+    background : var(--bright-blue);
+    color : white;
+}
+.button-section3:hover{
+    opacity: 0.8;
+}
+
+/*===========Responsive Section3==========*/
+@media (max-width: 900px) { 
+    .section3{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    div.content-section3{
+        justify-content: center;
+        align-items: center;
+    }
+    p.content-section3{
+        margin : 2rem 0;
+    }
+    #email-section3{
+        box-sizing: border-box;
+        width : 100%;
+        margin: 0;
+    }
+    .button-section3{
+        width:100%;
+    }
+}
+
+/*============================= Section 4 =========================*/
+.section4{
+    display: flex;
+    flex-direction: column;
+    padding :4rem;
+    background-color :var(--very-dark-blue);
+}
+.content-section4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    margin-top: 2rem;
+}
+.logo-bottom{
+    filter: invert(1);
+}
+.icon{
+    margin-right:10px;
+}
+div.contact{
+    color : white;
+}
+div.facebook{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    filter: brightness(100);
+}
+ul{
+    list-style:  none;
+}
+li{
+    margin-bottom: 10px;
+}
+a.links{
+    color : white;
+    text-decoration: none;
+}
+a.links:hover{
+    color :var(--desaturated-blue);
+}
+a.facebook{
+    margin-right: 1rem;
+
+}
+img.facebook{
+    filter : invert(1);
+}
+img.facebook:hover{
+    filter :var(--bright-blue)
+}
+/*===========Responsive Section4==========*/
+@media (max-width: 750px) { 
+    .section4{
+        flex-direction: column;
+    }
+    div.content-section4{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    ul.links{
+        padding: 0;
+    }
+    div.facebook{
+        margin :0;
+        text-align: center;
+    }
+}
+
+/*=================footer================*/
+.attribution{
+    font-size: 1rem;
+    font-weight: 700;
+}
