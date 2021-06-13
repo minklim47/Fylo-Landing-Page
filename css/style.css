@@ -49,9 +49,12 @@ img.logo{
     white-space: nowrap; 
     margin-left :2rem;
 }
-a.nav-links, a.nav-links:visited, a.nav-links:hover {
+a.nav-links, a.nav-links:visited{
     text-decoration : none;
     color : var(--very-dark-blue);
+}
+a.nav-links:hover {
+    color: #575988;
 }
 /*=======responsive nav======*/
 
@@ -329,9 +332,11 @@ div.contact{
     color : white;
 }
 div.facebook{
+    display: flex;
+    flex-direction: row;
     margin-left: 1rem;
     margin-top: 1rem;
-    filter: brightness(100);
+    
 }
 ul{
     list-style:  none;
@@ -351,11 +356,13 @@ a.facebook{
 
 }
 img.facebook{
-    filter : invert(1);
+    filter : invert(100%);
 }
-img.facebook:hover{
-    filter :var(--bright-blue)
+.facebook-link:hover{
+    text-decoration: none;
+    filter: invert(29%) sepia(98%) saturate(2552%) hue-rotate(218deg) brightness(99%) contrast(95%);
 }
+
 /*===========Responsive Section4==========*/
 @media (max-width: 750px) { 
     .section4{
@@ -369,8 +376,8 @@ img.facebook:hover{
         padding: 0;
     }
     div.facebook{
-        margin :0;
-        text-align: center;
+        margin :0 auto;
+        
     }
 }
 
